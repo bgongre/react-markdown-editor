@@ -1,31 +1,33 @@
-import React, { Component } from 'react';
-import marked from 'marked';
-import './App.css';
+import React, { Component } from "react";
+import Previewer from "./Previewer";
+import Editor from "./Editor";
+import "./App.css";
 
 class App extends Component {
-  constructor(){
+  constructor() {
     super();
-      this.state = {
-        input: ''
-      }
+    this.state = {
+      input: "# Hello"
+    };
   }
 
-  updateInput = (e) => {
-    this.setState({ input: marked(e.target.value) });
-  }
+  updateInput = e => {
+    this.setState({ input: e.target.value });
+  };
 
   render() {
-
     const { input } = this.state;
 
     return (
       <div>
         <div>
-          <textarea id="editor" onChange={this.updateInput}></textarea>
+          <Editor id="editor" updateState={this.updateInput} />
         </div>
-        <div id="preview">
-          <div>{input}</div>
-        </div>
+
+        <Previewer
+          id="previewer"
+          inputState={input}
+        />
       </div>
     );
   }

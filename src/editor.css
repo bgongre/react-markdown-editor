@@ -1,0 +1,28 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.editor {
+    color: rgb(9, 255, 0);
+    background-color: rgb(0, 0, 0);
+    width: 600px;
+    height: 250px;
+    /* box-shadow: 0 0 5px rgb(255, 255, 255); */
+}
+
+.editor-header {
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(9, 255, 0);
+    margin-top: 10%;
+    font-size: 12pt;
+    letter-spacing: 2px;
+    text-align: left;
+    background-color: rgb(54, 54, 54);
+    /* box-shadow: 0 0 5px rgb(255, 255, 255); */
+}
+
+.editor-header h6 {
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
