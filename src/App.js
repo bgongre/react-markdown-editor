@@ -7,8 +7,22 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      input: "# Hello"
+      input: ""
     };
+  }
+
+  componentDidMount() {
+    const mdPath = require("./placeholder.md");
+
+    fetch(mdPath)
+      .then(resp => {
+        return resp.text();
+      })
+      .then(text => {
+        this.setState({
+          input: text
+        });
+      });
   }
 
   updateInput = e => {
@@ -20,14 +34,8 @@ class App extends Component {
 
     return (
       <div>
-        <div>
-          <Editor id="editor" updateState={this.updateInput} />
-        </div>
-
-        <Previewer
-          id="previewer"
-          inputState={input}
-        />
+        <Editor id="editor" updateState={this.updateInput} marked={input} />
+        <Previewer id="previewer" inputState={input} />
       </div>
     );
   }
