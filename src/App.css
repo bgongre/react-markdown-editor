@@ -5,3 +5,8 @@ html {
 body {
   background-color: rgb(145, 145, 145);
 }
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}

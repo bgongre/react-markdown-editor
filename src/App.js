@@ -34,8 +34,12 @@ class App extends Component {
 
     return (
       <div>
-        <Editor id="editor" updateState={this.updateInput} marked={input} />
-        <Previewer id="previewer" inputState={input} />
+        <div className="flex-container">
+          <Editor id="editor" updateState={this.updateInput} marked={input} />
+        </div>
+        <div className="flex-container">
+          <Previewer id="previewer" inputState={input} />
+        </div>
       </div>
     );
   }

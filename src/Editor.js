@@ -5,8 +5,8 @@ import "./editor.css";
 class Editor extends Component {
   render() {
     return (
-      <div className="flex-container">
-        <div className="editor-header">
+      <div>
+        <div className="container">
           <h6>
             <FaGithubAlt
               size={15}

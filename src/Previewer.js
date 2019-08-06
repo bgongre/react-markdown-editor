@@ -16,16 +16,14 @@ class Previewer extends Component {
 
     return (
       <div>
-        <div className="flex-container">
-          <div className="preview-header">
-            <h6>MARKDOWN PREVIEW</h6>
-            <div
-              id="preview"
-              dangerouslySetInnerHTML={{
-                __html: marked(this.props.inputState, { renderer: renderer })
-              }}
-            />
-          </div>
+        <div className="preview-header">
+          <h6>MARKDOWN PREVIEW</h6>
+          <div
+            id="preview"
+            dangerouslySetInnerHTML={{
+              __html: marked(this.props.inputState, { renderer: renderer })
+            }}
+          />
         </div>
       </div>
     );
