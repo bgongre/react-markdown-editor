@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { FaGithubAlt } from "../node_modules/react-icons/fa";
-import "./editor.css";
+import { FaGithubAlt } from "react-icons/fa";
+import "../containers/editor.css";
 
 class Editor extends Component {
   render() {
     return (
       <div>
-        <div className="container">
+        <div className="editor-container">
           <h6>
             <FaGithubAlt
               size={15}

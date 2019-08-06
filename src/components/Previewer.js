@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import marked from "marked";
-import "./previewer.css";
+import "../containers/previewer.css";
 
 class Previewer extends Component {
   render() {
@@ -16,7 +16,7 @@ class Previewer extends Component {
 
     return (
       <div>
-        <div className="preview-header">
+        <div className="preview-container">
           <h6>MARKDOWN PREVIEW</h6>
           <div
             id="preview"
