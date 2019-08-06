@@ -2,7 +2,7 @@
 
 Place any Github flavored markdown in the editor and view it in the preview box below. 
 
-![project-preview](images/project-previewer.png)
+![project-preview](images/project-preview.png)
 
 *Make sure to clone the project and install NPM before running the command below.
 
