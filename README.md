@@ -4,7 +4,10 @@ Place any Github flavored markdown in the editor and view it in the preview box 
 
 ![project-preview](images/project-preview.png)
 
-*Make sure to clone the project and install NPM before running the command below.
+## Available Scripts
+**If running this project locally, run 'npm install' before following below instructions**
+
+In the project directory, you can run:
 
 ### `npm start`
 
