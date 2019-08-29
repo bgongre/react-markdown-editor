@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Previewer from "./Previewer";
-import Editor from "./Editor";
-import "./App.css";
+import Previewer from "./components/Previewer";
+import Editor from "./components/Editor";
+import "./containers/app.css";
 
 class App extends Component {
   constructor() {

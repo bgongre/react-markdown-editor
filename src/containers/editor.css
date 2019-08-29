@@ -1,0 +1,39 @@
+.editor-container {
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(9, 255, 0);
+  margin-top: 10%;
+  background-color: rgb(54, 54, 54);
+  box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.editor-container h6 {
+  font-family: "Orbitron", sans-serif;
+  text-align: left;
+  flex-basis: 100%;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+#editor {
+  flex: 1;
+  height: 250px;
+  min-width: 400px;
+  vertical-align: top;
+  padding: 0 5px;
+  color: rgb(9, 255, 0);
+  background-color: rgb(0, 0, 0);
+  box-shadow: 5px 5px 5px -5px rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 600px) {
+  .editor-container {
+    margin-left: 20px;
+    margin-right: 2%;
+  }
+
+  #editor {
+    min-width: 200px;
+  }
+}
